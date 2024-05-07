@@ -44,8 +44,8 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience">Experience and Studies</a>
           </li>
-		  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio">Tools</a>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Tools</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
@@ -186,31 +186,30 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           </div>
         </div>
       </section>
-	  
-	  <!--====================================================
+      <!--====================================================
                         PORTFOLIO
-    ======================================================-->      
-      <section class=" d-flex flex-column" id="portfolio"> 
-          <div class="row my-auto">
-              <div class="col-12">
-                <h2 class="  text-center">Tools</h2>
-                <div class="mb-5 heading-border"></div>
-              </div>
+    ======================================================-->
+      <section class=" d-flex flex-column" id="portfolio">
+        <div class="row my-auto">
+          <div class="col-12">
+            <h2 class="  text-center">Tools</h2>
+            <div class="mb-5 heading-border"></div>
           </div>
-          <div class="row my-auto" style="
+        </div>
+        <div class="row my-auto" style="
     justify-content: center;
 ">
-              <div class="col-sm-4 portfolio-item filter plugin">
-                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/gai4-tdd.png" alt="">
-                  </a>
+          <div class="col-sm-4 portfolio-item filter plugin">
+            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+              <div class="caption-port">
+                <div class="caption-port-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/gai4-tdd.png" alt="">
+            </a>
           </div>
+        </div>
       </section>
       <!--====================================================
                         SKILLS
@@ -275,54 +274,87 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             <h2 class="  text-center">Publications and awards</h2>
             <div class="mb-5 heading-border"></div>
           </div>
+          <div style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+">
+            <button id="showAllAwardsBtn" class="btn btn-primary show-all">Show all</button>
+          </div>
           <div class="main-award" id="award-box">
-            <div class="award">
-              <div class="award-icon"></div>
-              <div class="award-content">
-                <span class="date">June 2017 </span>
-                <h5 class="title">Winner SchoolUppiadi 2017</h5>
-                <p class="description"> Winner of a contest on the best StartUps created in schools, nationwide </p>
+            <div id="awardsContainer">
+              <div class="award award-item">
+                <div class="award-icon"></div>
+                <div class="award-content">
+                  <span class="date">June 2017 </span>
+                  <h5 class="title">Winner SchoolUppiadi 2017</h5>
+                  <p class="description"> Winner of a contest on the best StartUps created in schools, nationwide </p>
+                </div>
               </div>
-            </div>
-            <div class="award">
-              <div class="award-icon"></div>
-              <div class="award-content">
-                <span class="date">October 2021</span>
-                <h5 class="title">An Exploratory Study on Dead Methods in Open-source Java Desktop Applications</h5>
-                <p class="description"> Presentation of the scientific article in the ESEM 2021 conference. Article ranked in the top 5 of the conference </p>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">October 2021</span>
+                  <h5 class="title">An Exploratory Study on Dead Methods in Open-source Java Desktop Applications</h5>
+                  <p class="description"> Presentation of the scientific article in the ESEM 2021 conference. Article ranked in the top 5 of the conference </p>
+                </div>
               </div>
-            </div>
-            <div class="award">
-              <div class="award-icon"></div>
-              <div class="award-content">
-                <span class="date">June 2022</span>
-                <h5 class="title">Do Developers Modify Dead Methods during the Maintenance of Java Desktop Applications?</h5>
-                <p class="description"> Presentation of the scientific article in the EASE 2022 conference </p>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">June 2022</span>
+                  <h5 class="title">Do Developers Modify Dead Methods during the Maintenance of Java Desktop Applications?</h5>
+                  <p class="description"> Presentation of the scientific article in the EASE 2022 conference </p>
+                </div>
               </div>
-            </div>
-            <div class="award">
-              <div class="award-icon"></div>
-              <div class="award-content">
-                <span class="date">April 2023</span>
-                <h5 class="title">On the spread and evolution of dead methods in Java desktop applications: an exploratory study</h5>
-                <p class="description"> Special contribution for the International Journal Springer EMSE with the extension of the article presented at ESEM 2021 </p>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">April 2023</span>
+                  <h5 class="title">On the spread and evolution of dead methods in Java desktop applications: an exploratory study</h5>
+                  <p class="description"> Special contribution for the International Journal Springer EMSE with the extension of the article presented at ESEM 2021 </p>
+                </div>
               </div>
-            </div>
-			<div class="award">
-              <div class="award-icon"></div>
-              <div class="award-content">
-                <span class="date">November 2023</span>
-                <h5 class="title">The Role of the ’Principle of Acceptability in
-Security’ in DHEAL-COM Web Apps</h5>
-                <p class="description"> Presentation of the scientific poster to the AHL Napoli 2023 </p>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">November 2023</span>
+                  <h5 class="title">The Role of the ’Principle of Acceptability in Security’ in DHEAL-COM Web Apps</h5>
+                  <p class="description"> Presentation of the scientific poster to the AHL Napoli 2023 </p>
+                </div>
               </div>
-            </div>
-			<div class="award">
-              <div class="award-icon"></div>
-              <div class="award-content">
-                <span class="date">December 2023</span>
-                <h5 class="title">On Deprecated API Usages: An Exploratory Study of Top-Starred Projects on GitHub</h5>
-                <p class="description"> Presentation of the scientific article in the PROFES 2023 conference. Article won the best paper award </p>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">December 2023</span>
+                  <h5 class="title">On Deprecated API Usages: An Exploratory Study of Top-Starred Projects on GitHub</h5>
+                  <p class="description"> Presentation of the scientific article in the PROFES 2023 conference. Article won the best paper award </p>
+                </div>
+              </div>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">December 2023</span>
+                  <h5 class="title">On Deprecated API Usages: An Exploratory Study of Top-Starred Projects on GitHub</h5>
+                  <p class="description"> Presentation of the scientific article in the PROFES 2023 conference. Article won the best paper award </p>
+                </div>
+              </div>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">January 2024</span>
+                  <h5 class="title">Generative Artificial Intelligence to Improve the Learning of Test-Driven Development</h5>
+                  <p class="description"> Presentation of the extended abstract in the WAILS 2024 conference.</p>
+                </div>
+              </div>
+              <div class="award">
+                <div class="award-icon award-item"></div>
+                <div class="award-content">
+                  <span class="date">March 2024</span>
+                  <h5 class="title">Generative Artificial Intelligence for Test-Driven Development: GAI4-TDD</h5>
+                  <p class="description"> Presentation of the tool demo article in the SANER 2024 conference.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -367,54 +399,51 @@ Security’ in DHEAL-COM Web Apps</h5>
         </div>
       </section>
     </div>
-	<!--====================================================
+    <!--====================================================
                     PORTFOLIO MODALS
 ======================================================-->
-	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" >
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal">
-                  <div class="lr">
-                      <div class="rl"></div>
-                  </div>
-              </div>
-              <div class="container">
-                  <div class="row">
-                          <div class="modal-body">
-                              <div class="title-bar">
-                                <div class="col-md-12">
-                                  <h2 class="text-center">GAI4-TDD</h2>
-                                  <div class="heading-border"></div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-									<div class="embed-responsive embed-responsive-16by9">
-                                  <!--<img class="img-fluid img-centered" src="img/portfolio/p-1.jpg" alt="">-->
-										<iframe src="https://www.youtube.com/embed/3oIDb-6NgS4?si=XmhXMmuLOeAmKy-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                </div>
-									</div>
-								<div class="col-md-6">
-                                  <p>Test-Driven Development (TDD) is an agile software development practice. It promotes short cycles, composed of three phases each, to incrementally implement software functionality: Red, Green, and Refactor. In the red phase, the developer writes a unit test for a small chunk of functionality not yet implemented and watches the test fail, while in the green the developer writes code to make the test pass as quickly as possible (without worrying about the written code). In the refactor phase, the developer optimizes the design. In this demo paper, we present GAI4-TDD (Generative Artificial Intelligence for Test-Driven Development) a PyCharm plugin to support the green phase of TDD. Specifically, this plugin generates source code from the tests the developer writes so that this source code lets these tests pass. In the past has been observed that TDD can be beneficial not only in “traditional” software development contexts but also in other development contexts such as in the implementation of Embedded Systems (ESs). We preliminary assessed GAI4-TDD in such a development context by a laboratory empirical study on three ESs. GAI4-TDD generated production code that passed 52 tests
-out of 61. For further information please write me an email. </p>
-                                  <ul class="list-inline item-details">
-                                      <li>Download:
-                                          <strong>
-                                            <a href="https://github.com/Hauntlight/GAI4-TDD">Link</a>
-                                          </strong>
-                                      </li>
-                                  </ul>
-                                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                      <i class="fa fa-times"></i> Close
-                                  </button>
-                              </div>
-                            </div>
-                          </div>
-                  </div>
-              </div>
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
+          <div class="container">
+            <div class="row">
+              <div class="modal-body">
+                <div class="title-bar">
+                  <div class="col-md-12">
+                    <h2 class="text-center">GAI4-TDD</h2>
+                    <div class="heading-border"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <!--<img class="img-fluid img-centered" src="img/portfolio/p-1.jpg" alt="">-->
+                      <iframe src="https://www.youtube.com/embed/3oIDb-6NgS4?si=XmhXMmuLOeAmKy-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p>Test-Driven Development (TDD) is an agile software development practice. It promotes short cycles, composed of three phases each, to incrementally implement software functionality: Red, Green, and Refactor. In the red phase, the developer writes a unit test for a small chunk of functionality not yet implemented and watches the test fail, while in the green the developer writes code to make the test pass as quickly as possible (without worrying about the written code). In the refactor phase, the developer optimizes the design. In this demo paper, we present GAI4-TDD (Generative Artificial Intelligence for Test-Driven Development) a PyCharm plugin to support the green phase of TDD. Specifically, this plugin generates source code from the tests the developer writes so that this source code lets these tests pass. In the past has been observed that TDD can be beneficial not only in “traditional” software development contexts but also in other development contexts such as in the implementation of Embedded Systems (ESs). We preliminary assessed GAI4-TDD in such a development context by a laboratory empirical study on three ESs. GAI4-TDD generated production code that passed 52 tests out of 61. For further information please write me an email. </p>
+                    <ul class="list-inline item-details">
+                      <li>Download: <strong>
+                          <a href="https://github.com/Hauntlight/GAI4-TDD">Link</a>
+                        </strong>
+                      </li>
+                    </ul>
+                    <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                      <i class="fa fa-times"></i> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-	
     <!-- Global javascript -->
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -444,6 +473,30 @@ out of 61. For further information please write me an email. </p>
           delay: 10,
           time: 2000
         });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get all award items
+        var awardItems = document.querySelectorAll('.award-content');
+        // Hide all but the last two awards
+        for (var i = 0; i < awardItems.length; i++) {
+          if (i < awardItems.length - 2) {
+            awardItems[i].style.display = 'none';
+          }
+        }
+        // Function to show all awards
+        function showAllAwards() {
+          for (var i = 0; i < awardItems.length; i++) {
+            awardItems[i].style.display = 'block';
+          }
+          // Hide the "Show all" button
+          showAllAwardsBtn.style.display = 'none';
+        }
+        // Get the "Show all" button
+        var showAllAwardsBtn = document.getElementById('showAllAwardsBtn');
+        // Add click event listener to the "Show all" button
+        showAllAwardsBtn.addEventListener('click', showAllAwards);
       });
     </script>
   </body>
