@@ -1,613 +1,322 @@
-<!--
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
--->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta name="google-site-verification" content="cskLBRzsOPoqVn7CA3HVwSceXpdfev5pEQRtZLgdW_4" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Pietro Cassieri's Presentation">
+
+    <meta name="description" content="Portfolio of Pietro Cassieri — Software Engineer, PhD Researcher, and Open-Source Enthusiast.">
     <meta name="author" content="Pietro Cassieri">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Pietro Cassieri</title>
+
+    <title>Pietro Cassieri — Portfolio</title>
+
     <!-- Global stylesheets -->
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:300,400,600,700,800,900|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- OpenGraph & Structured Data -->
+    <meta property="og:title" content="Pietro Cassieri — Portfolio">
+    <meta property="og:description" content="Software Engineer • PhD Researcher • Open Source Enthusiast">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/og-cover.jpg">
+    <meta property="og:url" content="https://hauntlight.github.io/">
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Pietro Cassieri",
+      "url":"https://hauntlight.github.io/",
+      "image":"https://hauntlight.github.io/img/profile.png",
+      "jobTitle":"Software Engineer, PhD Researcher",
+      "worksFor":{"@type":"Organization","name":"University of Salerno"},
+      "alumniOf":[{"@type":"CollegeOrUniversity","name":"Università della Basilicata"}],
+      "sameAs":[
+        "https://github.com/Hauntlight",
+        "https://www.linkedin.com/in/pietro-cassieri-a9a205228/",
+        "https://twitter.com/PietroCassieri"
+      ]
+    }
+    </script>
   </head>
-  <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none  mx-0 px-0">
-          <img src="img/logo-white.png" alt="" class="img-fluid">
-        </span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience and Studies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Tools</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Pubblications and Awards</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+
+  <body>
+    <!-- Header / Nav -->
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Homepage">
+          <span class="logo">PC</span>
+          <span class="brand-text">Pietro Cassieri</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+          <span class="icon-menu"></span>
+        </button>
+
+        <ul id="site-menu" class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><button id="theme-toggle" class="btn-ghost" aria-label="Toggle dark mode"><i class="fa fa-moon-o" aria-hidden="true"></i></button></li>
         </ul>
-      </div>
-    </nav>
-    <div class="container-fluid p-0">
-      <!--====================================================
-                        ABOUT
-    ======================================================-->
-      <section class="resume-section p-3 p-lg-5 d-column d-flex" id="about">
-        <div class="my-auto" style="text-align: center">
-          <h1 class="mb-0">Pietro <span class="text-primary">Cassieri</span>
-          </h1>
-          <div class="subheading">CODE IS LIKE HUMOR. WHEN YOU HAVE TO EXPLAIN IT, IT'S BAD </div>
-          <p class="d-none d-sm-block" style="margin-left: 10rem;margin-right: 10rem;">HI! I am a software developer, nerd and passionate about research and technology since I was a child. I wrote my first line of code when I was 14 and have never stopped 😁. Here is a brief summary of my skills, to know the details contact me on your favorite social network or via email.</p>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a href="https://twitter.com/PietroCassieri">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/pietro-cassieri-a9a205228/">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/Hauntlight">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero" role="region" aria-label="Intro">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="display">Pietro <span class="text-gradient">Cassieri</span></h1>
+          <p class="subtitle">Software Engineer • PhD Researcher • Open-Source Enthusiast</p>
+          <p class="tagline">“Code is like humor. When you have to explain it, it’s bad.”</p>
+        
+          <ul class="social">
+            <li><a href="https://github.com/Hauntlight" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pietro-cassieri-a9a205228/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/PietroCassieri" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
           </ul>
         </div>
-      </section>
-      <!--====================================================
-                        EXPERIENCE
-    ======================================================-->
-      <section class="resume-section p-3 p-lg-5 " id="experience">
-        <div class="row my-auto">
-          <div class="col-12">
-            <h2 class="  text-center">Experiences and studies</h2>
-            <div class="mb-5 heading-border"></div>
-          </div>
-          <div class="resume-item col-md-12 col-sm-12 ">
-            <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-              <div class=" resume-content mr-auto">
-                <h4 class="mb-3">
-                  <i class="fa fa-search mr-3 text-success"></i>Research Assistant (Visiting PhD)
-                </h4>
-                <p>During my PhD student journey at the University of Salerno, I spent my research period abroad as a Research Assistant at the Singapore Management University for 6 months, under the supervision of Prof. David Lo.</p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">September 2024 - March 2025</span>
-              </div>
-            </div>
-          </div>
-          <div class="resume-item col-md-6 col-sm-12 ">
-            <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-              <div class=" resume-content mr-auto">
-                <h4 class="mb-3">
-                  <i class="fa fa-graduation-cap mr-3 text-danger"></i>Ph.D. Student
-                </h4>
-                <p>Given the great satisfactions during my studies, I decided to continue my academic career with a PhD at the University of Salerno under the supervision of professor Giuseppe Scanniello, orienting my studies in the field of software engineering, with a focus on accessibility and security.</p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">November 2023 - 2026(Expected)</span>
-              </div>
-            </div>
-          </div>
-          <div class="resume-item col-md-6 col-sm-12 ">
-            <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-              <div class=" resume-content mr-auto">
-                <h4 class="mb-3">
-                  <i class="fa fa-laptop mr-3 text-info"></i>Software Developer
-                </h4>
-                <p>Given my eagerness to put my knowledge into practice, shortly after the bachelor degree, and simultaneously with my master degree studies, I embark on a career within a small-medium enterprise named Cervellotik Education with the role of software developer and CTO</p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">July 2021 - June 2023</span>
-              </div>
-            </div>
-          </div>
-          <div class="resume-item col-md-6 col-sm-12 ">
-            <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-              <div class=" resume-content mr-auto">
-                <h4 class="mb-3">
-                  <i class="fa fa-bookmark mr-3 text-info"></i>Teaching/Coaching
-                </h4>
-                <p>While working as a Software Developer, through the knowledge acquired I held the role of teacher in the <i>I.T. SVIL Academy</i> aimed at recruitment, managed by Virvelle. I explained the modules regarding Maven, Hibernate, Git and OWASP / PenTest for a total of 36 hours. </p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">March 2023 - April 2023</span>
-              </div>
-            </div>
-          </div>
-          <div class="resume-item col-md-6 col-sm-12">
-            <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-              <div class="resume-content mr-auto">
-                <h4 class="mb-3">
-                  <i class="fa fa-graduation-cap mr-3 text-warning"></i>Master's Degree in Computer Engineering
-                </h4>
-                <p>In 2023 I conclude the second cycle of academic studies, at the University of Basilicata, this time in Computer Engineering, thus expanding my skills in both computer science and engineering. The course ended with the maximum evaluation of 110/110 cum laude.</p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">October 2020 - April 2023</span>
-              </div>
-            </div>
-          </div>
-          <div class="resume-item col-md-6 col-sm-12">
-            <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-              <div class="resume-content mr-auto">
-                <h4 class="mb-3">
-                  <i class="fa fa-graduation-cap mr-3 text-success"></i>Bachelor's Degree in Computer Science and Technology
-                </h4>
-                <p>Shortly after turning 22, I completed the first cycle of academic studies at the University of Basilicata, with a score of 102/110, consolidating my technical knowledge with a lot of practice.</p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">October 2017 - February 2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="resume-item col-md-6 col-sm-12">
-            <div class="card mx-0 p-4 mb-5" style="border-color: #2196f3; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-              <div class="resume-content mr-auto">
-                <h4 class="mb-3">
-                  <i class="fa fa-book mr-3 text-primary"></i>Diploma in Business Information Systems
-                </h4>
-                <p>At the age of 18, I reached my first scholastic milestone, graduating with a score of 95/100 in the high school I attended, after a 5-year course of study focused on Economics and information technology</p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">July 2017</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--====================================================
-                        PORTFOLIO
-    ======================================================-->
-      <section class=" d-flex flex-column" id="portfolio">
-        <div class="row my-auto">
-          <div class="col-12">
-            <h2 class="  text-center">My Projects</h2>
-            <div class="mb-5 heading-border"></div>
-          </div>
-        </div>
-        <div class="row my-auto" style="
-    justify-content: center;">
-          <div class="col-sm-4 portfolio-item filter plugin">
-            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption-port">
-                <div class="caption-port-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/gai4-tdd.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item filter games">
-            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption-port">
-                <div class="caption-port-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/tale_of_LLM.png" alt="">
-            </a>
-          </div>
-        </div>
-      </section>
-      <!--====================================================
-                        SKILLS
-    ======================================================-->
-      <section class=" d-flex flex-column" id="skills">
-        <div class="p-lg-5 p-3 skill-cover">
-          <h3 class="text-center text-white">Coding Skills</h3>
-          <div class="row text-center my-auto ">
-            <div class="col-md-3 col-sm-6">
-              <div class="skill-item">
-                <!--<i class="fa fa-html5 fa-5x"></i>-->
-                <i class="icon-java"></i>
-                <h2>
-                  <span class="counter"> 99 </span>
-                  <span>%</span>
-                </h2>
-                <p>Java</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="skill-item">
-                <i class="fa fa-linux fa-5x"></i>
-                <h2>
-                  <span class="counter"> 90 </span>
-                  <span>%</span>
-                </h2>
-                <p>Linux</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="skill-item">
-                <!-- <i class="fa fa-code fa-5x"></i> -->
-                <i class="icon-sql"></i>
-                <h2>
-                  <span class="counter"> 85 </span>
-                  <span>%</span>
-                </h2>
-                <p>SQL/RDBMS</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="skill-item">
-                <!--<i class="fa fa-globe fa-5x"></i>-->
-                <i class="icon-c"></i>
-                <h2>
-                  <span class="counter"> 75 </span>
-                  <span>%</span>
-                </h2>
-                <p>C++</p>
-              </div>
-            </div>
-          </div>
-          <h3 class="text-center text-white">And so on!</h3>
-        </div>
-      </section>
-      <!--====================================================
-                           AWARDS
-    ======================================================-->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <div class="col-12">
-            <h2 class="  text-center">Publications and awards</h2>
-            <div class="mb-5 heading-border"></div>
-          </div>
-          <div style="
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
-">
-            <button id="showAllAwardsBtn" class="btn btn-primary show-all">Show all</button>
-          </div>
-          <div class="main-award" id="award-box">
-            <div id="awardsContainer">
-              <div class="award award-item">
-                <div class="award-icon"></div>
-                <div class="award-content">
-                  <span class="date">June 2017 </span>
-                  <h5 class="title">Winner SchoolUppiadi 2017</h5>
-                  <p class="description"> Winner of a contest on the best StartUps created in schools, nationwide </p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">October 2021</span>
-                  <h5 class="title">An Exploratory Study on Dead Methods in Open-source Java Desktop Applications</h5>
-                  <p class="description"> Presentation of the scientific article in the ESEM 2021 conference. Article ranked in the top 5 <b>(Candidate Best Papers)</b> of the conference </p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">June 2022</span>
-                  <h5 class="title">Do Developers Modify Dead Methods during the Maintenance of Java Desktop Applications?</h5>
-                  <p class="description"> Presentation of the scientific article in the EASE 2022 conference </p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">April 2023</span>
-                  <h5 class="title">On the spread and evolution of dead methods in Java desktop applications: an exploratory study</h5>
-                  <p class="description"> Special contribution for the International Journal Springer EMSE with the extension of the article presented at ESEM 2021 </p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">November 2023</span>
-                  <h5 class="title">The Role of the ’Principle of Acceptability in Security’ in DHEAL-COM Web Apps</h5>
-                  <p class="description"> Presentation of the scientific poster to the AHL Napoli 2023 </p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">December 2023</span>
-                  <h5 class="title">On Deprecated API Usages: An Exploratory Study of Top-Starred Projects on GitHub</h5>
-                  <p class="description"> Presentation of the scientific article in the PROFES 2023 conference. Article won the <b>Best Paper Award</b>
-                  </p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">January 2024</span>
-                  <h5 class="title">Generative Artificial Intelligence to Improve the Learning of Test-Driven Development</h5>
-                  <p class="description"> Presentation of the extended abstract in the WAILS 2024 conference.</p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">March 2024</span>
-                  <h5 class="title">Generative Artificial Intelligence for Test-Driven Development: GAI4-TDD</h5>
-                  <p class="description"> Presentation of the tool demo article in the SANER 2024 conference.</p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">June 2024</span>
-                  <h5 class="title">A Folklore Confirmation on the Removal of Dead Code</h5>
-                  <p class="description"> Presentation of the short paper in the EASE 2024 conference.</p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">August 2024</span>
-                  <h5 class="title">User Experience and Security in Digital Health Applications: Results from a Rapid Review</h5>
-                  <p class="description"> Presentation of the short paper in the SEAA 2024 conference.</p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">August 2024</span>
-                  <h5 class="title">A Confirmation Study on the Removal of Dead Code from Java Desktop Applications</h5>
-                  <p class="description"> Presentation of the short paper in the SEEA 2024 conference.</p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">October 2024</span>
-                  <h5 class="title">MSR4SBOM: Mining Software Repositories for enhanced Software Bills of Materials.</h5>
-                  <p class="description"> Presentation of the poster in the ESEM 2024 conference.</p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">April 2025</span>
-                  <h5 class="title">Do LLMs Provide Links to Code Similar to What They Generate? A Study with Gemini and Bing CoPilot</h5>
-                  <p class="description"> Research Paper at the MSR 2025 conference.</p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">October 2025</span>
-                  <h5 class="title">A Mining-Software-Repository study on deprecated API usages in open-source Java software applications</h5>
-                  <p class="description"> Special contribution for the International Journal Information and Software Technology (IST) with the extension of the article presented at PROFES 2023 </p>
-                </div>
-              </div>
-              <div class="award">
-                <div class="award-icon award-item"></div>
-                <div class="award-content">
-                  <span class="date">November 2025</span>
-                  <h5 class="title">On the use of Test-Driven Development for Embedded Systems</h5>
-                  <p class="description"> Special contribution for the International Journal Information and Software Technology (IST) as special Issue</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--====================================================
-                          CONTACT
-    ======================================================-->
-      <section class=" d-flex flex-column" style="overflow:hidden">
-        <div style="text-align: center" class="row my-auto" id="contact">
-          <div class="col-md-4"></div>
-          <div class="col-md-8">
-            <div class="contact-cont">
-              <h3>CONTACT</h3>
-              <div class="heading-border-light"></div>
-              <p>If there is any curiosity about me, job offers or simply collaborations, you can contact me through the following methods</p>
-              <div class="col-md-12">
-                <div class="contact-cont2">
-                  <div class="contact-mail contact-side-desc contact-box-desc">
-                    <ul class="list-inline social-icon-f top-data">
-                      <li>
-                        <a href="https://it-it.facebook.com/pietro.cassieri" target="_empty">
-                          <i class="fa top-social fa-facebook" style="color: #4267b2; border-color:#4267b2;"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://twitter.com/PietroCassieri" target="_empty">
-                          <i class="fa top-social fa-twitter" style="color: #4AB3F4; border-color:#4AB3F4;"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com/in/pietro-cassieri-a9a205228/" target="_empty">
-                          <i class="fa top-social fa-linkedin" style="color: #e24343; border-color:#e24343;"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!--====================================================
-                    PORTFOLIO MODALS
-======================================================-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <div class="title-bar">
-                  <div class="col-md-12">
-                    <h2 class="text-center">GAI4-TDD</h2>
-                    <div class="heading-border"></div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <!--<img class="img-fluid img-centered" src="img/portfolio/p-1.jpg" alt="">-->
-                      <iframe src="https://www.youtube.com/embed/3oIDb-6NgS4?si=XmhXMmuLOeAmKy-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <p>Test-Driven Development (TDD) is an agile software development practice. It promotes short cycles, composed of three phases each, to incrementally implement software functionality: Red, Green, and Refactor. In the red phase, the developer writes a unit test for a small chunk of functionality not yet implemented and watches the test fail, while in the green the developer writes code to make the test pass as quickly as possible (without worrying about the written code). In the refactor phase, the developer optimizes the design. In this demo paper, we present GAI4-TDD (Generative Artificial Intelligence for Test-Driven Development) a PyCharm plugin to support the green phase of TDD. Specifically, this plugin generates source code from the tests the developer writes so that this source code lets these tests pass. In the past has been observed that TDD can be beneficial not only in “traditional” software development contexts but also in other development contexts such as in the implementation of Embedded Systems (ESs). We preliminary assessed GAI4-TDD in such a development context by a laboratory empirical study on three ESs. GAI4-TDD generated production code that passed 52 tests out of 61. For further information please write me an email. </p>
-                    <ul class="list-inline item-details">
-                      <li>Download: <strong>
-                          <a href="https://github.com/Hauntlight/GAI4-TDD">Link</a>
-                        </strong>
-                      </li>
-                    </ul>
-                    <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                      <i class="fa fa-times"></i> Close </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="hero-art">
+          <picture>
+            <source srcset="img/profile.png" type="image/png">
+            <img src="img/profile.png" alt="Portrait of Pietro Cassieri" width="420" height="420">
+          </picture>
         </div>
       </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="modal-body">
-                <div class="title-bar">
-                  <div class="col-md-12">
-                    <h2 class="text-center">Tale of LLM</h2>
-                    <div class="heading-border"></div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img class="img-fluid img-centered" src="img/portfolio/tale_of_LLM_ico.png" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <p>Tale of LLM is a text-based adventure game powered by a Large Language Model (LLM). Choose your class, explore dangerous environments, and face legendary creatures. Your choices and luck shape the story, leading to unique narrative endings.</p>
-                    <ul class="list-inline item-details">
-                      <li>Download: <strong>
-                          <a href="https://github.com/Hauntlight/Tale-of-LLM">Link</a>
-                        </strong>
-                      </li>
-                    </ul>
-                    <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                      <i class="fa fa-times"></i> Close </button>
-                  </div>
-                </div>
-              </div>
+      <div class="scroll-down" aria-hidden="true"><span></span></div>
+    </section>
+
+    <main id="content">
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              Hi! I am a software developer, nerd, and passionate about research and technology since I was a child. I wrote my first line of code when I was 14 and have never stopped. 
+              As a PhD Researcher in Software Engineering at the University of Salerno, I enjoy designing dependable software, exploring accessibility and security, and contributing to open-source.
+            </p>
+            <div class="chips">
+              <span class="chip">Software Engineering</span>
+              <span class="chip">Accessibility</span>
+              <span class="chip">Security</span>
+              <span class="chip">AI-assisted Dev</span>
+              <span class="chip">Game Development</span>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section alt">
+        <div class="container">
+          <h2>Experience & Studies</h2>
+          <ol class="timeline">
+            <li>
+              <div class="badge">Sep 2024 → Mar 2025</div>
+              <div class="content">
+                <h3>Research Assistant (Visiting PhD) — Singapore Management University</h3>
+                <p>During my PhD, I spent 6 months of my research period abroad as a Research Assistant at SMU, under the supervision of Prof. David Lo, focusing on AI-assisted development workflows.</p>
+              </div>
+            </li>
+            <li>
+              <div class="badge">Nov 2023 → Present</div>
+              <div class="content">
+                <h3>PhD Student — University of Salerno</h3>
+                <p>Continuing my academic career with a PhD under Prof. Giuseppe Scanniello, orienting my studies in software engineering with a focus on accessibility and security.</p>
+              </div>
+            </li>
+             <li>
+              <div class="badge">Mar 2023 → Apr 2023</div>
+              <div class="content">
+                <h3>Teaching/Coaching — I.T. SVIL Academy</h3>
+                <p>As an instructor for Virvelle, I taught modules on Maven, Hibernate, Git, and OWASP/PenTest for a total of 36 hours, aimed at professional recruitment.</p>
+              </div>
+            </li>
+			<li>
+              <div class="badge">Jul 2021 → Jun 2023</div>
+              <div class="content">
+                <h3>CTO / Software Developer — Cervellotik Education</h3>
+                <p>Simultaneously with my master's degree, I led software development, architecture, and systems as software developer and CTO for a small-medium enterprise.</p>
+              </div>
+            </li>
+            <li>
+              <div class="badge">Oct 2020 → Apr 2023</div>
+              <div class="content">
+                <h3>Master's Degree in Computer Engineering — University of Basilicata</h3>
+                <p>Completed the second cycle of academic studies, expanding my skills in computer science and engineering. Graduated with the maximum evaluation of 110/110 cum laude.</p>
+              </div>
+            </li>
+            <li>
+              <div class="badge">Oct 2017 → Feb 2021</div>
+              <div class="content">
+                <h3>Bachelor's Degree in Computer Science — University of Basilicata</h3>
+                <p>Completed the first cycle of academic studies with a score of 102/110, consolidating my technical knowledge with extensive practice.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+            <!-- Awards -->
+      <section id="awards" class="section">
+        <div class="container">
+            <h2>Awards & Recognitions</h2>
+            <p class="lead">A showcase of key awards and recognitions received for research contributions and technical projects.</p>
+            <div class="cards award-grid">
+                <article class="card award-card">
+                    <i class="fa fa-trophy"></i>
+                    <h3>Best Paper Award</h3>
+                    <p class="muted">PROFES 2023</p>
+                    <p>For the paper: "On Deprecated API Usages: An Exploratory Study of Top-Starred Projects on GitHub".</p>
+                </article>
+                <article class="card award-card">
+                    <i class="fa fa-trophy"></i>
+                    <h3>Candidate Best Paper</h3>
+                    <p class="muted">ESEM 2021</p>
+                    <p>Paper ranked in the top 5 for "An Exploratory Study on Dead Methods in Open-source Java Desktop Applications".</p>
+                </article>
+                <article class="card award-card">
+                    <i class="fa fa-trophy"></i>
+                    <h3>Winner SchoolUppiadi</h3>
+                    <p class="muted">2017</p>
+                    <p>First place in a national contest for the best startup concepts created in high schools.</p>
+                </article>
+            </div>
+            <!-- Toggle Button for Awards -->
+            <div class="text-center mt">
+                <button id="awards-toggle" class="btn-tertiary">Show More</button>
+            </div>
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section alt">
+        <div class="container">
+            <h2>Publications</h2>
+            <p class="lead">A timeline of my key academic publications. For a complete list, please see my academic profiles.</p>
+            <ol id="publications-timeline" class="timeline">
+                <!-- Items are dynamically loaded here by JS -->
+            </ol>
+            <div class="text-center mt">
+                <button id="publications-toggle" class="btn-tertiary">Show More</button>
+            </div>
+        </div>
+      </section>
+      
+      <!-- Research Community Service -->
+      <section id="service" class="section">
+        <div class="container">
+            <h2>Research Community Service</h2>
+            <div class="card">
+                <ul class="service-list">
+                    <li><i class="fa fa-users"></i><div><h3>Workshop Organizer</h3><span>Promoting and dealing with Advanced Technology in Healthcare (PATH), at PROFES 2025</span></div></li>
+                    <li><i class="fa fa-share-alt"></i><div><h3>Social Media Chair</h3><span>International Conference on Product-Focused Software Process Improvement (PROFES 2025)</span></div></li>
+                    <li><i class="fa fa-search"></i><div><h3>Reviewer</h3><span>International Journal of Human-Computer Interaction (from 2025)</span></div></li>
+                    <li><i class="fa fa-search"></i><div><h3>Reviewer</h3><span>ACM Transactions on Software Engineering and Methodology (TOSEM, from 2024)</span></div></li>
+                </ul>
+                <div class="text-center mt">
+                    <button id="service-toggle" class="btn-tertiary">Show More</button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="cards grid-2">
+            <article class="card project">
+              <div class="thumb">
+                <img src="img/portfolio/gai4-tdd.png" alt="GAI4-TDD project screenshot" loading="lazy">
+              </div>
+              <div class="body">
+                <h3>GAI4-TDD</h3>
+                <p>A PyCharm plugin to support the green phase of Test-Driven Development (TDD) by generating source code from tests using Generative AI.</p>
+                <div class="tags">
+                  <span>Python</span><span>PyCharm</span><span>AI</span><span>TDD</span>
+                </div>
+                <div class="actions">
+                  <a href="https://github.com/Hauntlight/GAI4-TDD" target="_blank" rel="noopener" class="btn-pill"><i class="fa fa-github"></i> View Code on GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb">
+                <img src="img/portfolio/tale_of_LLM.png" alt="Tale of LLM project screenshot" loading="lazy">
+              </div>
+              <div class="body">
+                <h3>Tale of LLM</h3>
+                <p>A text-based adventure game powered by a Large Language Model (LLM). Your choices and luck shape a unique narrative story.</p>
+                <div class="tags">
+                  <span>Python</span><span>LLM</span><span>Game Dev</span>
+                </div>
+                <div class="actions">
+                  <a href="https://github.com/Hauntlight/Tale-of-LLM" target="_blank" rel="noopener" class="btn-pill"><i class="fa fa-github"></i> View Code on GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-java-plain"></i>
+              <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-python-plain"></i>
+              <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-linux-plain"></i>
+              <h3>Linux</h3>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-cplusplus-plain"></i>
+              <h3>C++</h3>
+            </div>
+          </div>
+          <div class="chips mt">
+            <span class="chip">SQL/RDBMS</span>
+            <span class="chip">Git</span>
+            <span class="chip">LLM Integration</span>
+            <span class="chip">Unity</span>
+            <span class="chip">Hibernate</span>
+            <span class="chip">CTF Player</span>
+            <span class="chip">Maven</span>
+            <span class="chip">HTML & CSS</span>
+            <span class="chip">Kivy</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Pietro Cassieri.</p>
+        <div class="footer-links">
+          <a href="#home">Back to top</a>
+        </div>
       </div>
-    </div>
-    <!-- Global javascript -->
-    <script src="js/jquery/jquery.min.js"></script>
-    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/counter/jquery.waypoints.min.js"></script>
-    <script src="js/counter/jquery.counterup.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      $(document).ready(function() {
-        $(".filter-b").click(function() {
-          var value = $(this).attr('data-filter');
-          if (value == "all") {
-            $('.filter').show('1000');
-          } else {
-            $(".filter").not('.' + value).hide('3000');
-            $('.filter').filter('.' + value).show('3000');
-          }
-        });
-        if ($(".filter-b").removeClass("active")) {
-          $(this).removeClass("active");
-        }
-        $(this).addClass("active");
-      });
-      // SKILLS
-      $(function() {
-        $('.counter').counterUp({
-          delay: 10,
-          time: 2000
-        });
-      });
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Get all award items
-        var awardItems = document.querySelectorAll('.award-content');
-        // Hide all but the last two awards
-        for (var i = 0; i < awardItems.length; i++) {
-          if (i < awardItems.length - 2) {
-            awardItems[i].style.display = 'none';
-          }
-        }
-        // Function to show all awards
-        function showAllAwards() {
-          for (var i = 0; i < awardItems.length; i++) {
-            awardItems[i].style.display = 'block';
-          }
-          // Hide the "Show all" button
-          showAllAwardsBtn.style.display = 'none';
-        }
-        // Get the "Show all" button
-        var showAllAwardsBtn = document.getElementById('showAllAwardsBtn');
-        // Add click event listener to the "Show all" button
-        showAllAwardsBtn.addEventListener('click', showAllAwards);
-      });
-    </script>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
