@@ -138,7 +138,8 @@ a:hover { text-decoration: underline; }
 /* ===== Generic Layouts & Cards ===== */
 h2 { text-align: center; margin-bottom: 1rem; font-family: "Saira Extra Condensed"; font-size: 3rem; font-weight: 700; }
 h3 { font-family: "Saira Extra Condensed"; font-weight: 600; font-size: 1.5rem; margin-top: 0; }
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start;}
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch;}
+.grid-auto { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; align-items: stretch;}
 .cards { display: grid; gap: 24px; }
 .card {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
@@ -197,9 +198,11 @@ h3 { font-family: "Saira Extra Condensed"; font-weight: 600; font-size: 1.5rem; 
 }
 
 /* ===== Projects ===== */
+.project { display: flex; flex-direction: column; height: 100%; }
+.project .body { display: flex; flex-direction: column; flex-grow: 1; }
 .project .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
 .project .tags span { font-size: .8rem; background-color: color-mix(in srgb, var(--brand1), transparent 85%); padding: 4px 10px; border-radius: 999px; }
-.project .actions { margin-top: 16px; }
+.project .actions { margin-top: auto; padding-top: 16px; }
 
 /* ===== Timeline ===== */
 .timeline { list-style: none; margin: 40px 0 0; padding: 0; display: grid; gap: 24px; position: relative; }
