@@ -6,8 +6,9 @@
    * Adding an 'award' property allows us to dynamically add badges.
    */
   const publicationsData = [
+    { date: 'Jul 2026', title: 'Heart Failure Risk Stratification in an IoT Healthcare Platform Using Ensemble Learning', description: 'Presentation of the research paper at CoDIT 2026 on the special session Artificial Intelligence and Optimization Methods for Smart Healthcare Systems' },
     { date: 'Nov 2025', title: 'On the use of Test-Driven Development for Embedded Systems', description: 'Special contribution for the International Journal Information and Software Technology (IST) as special Issue.' },
-    { date: 'Oct 2025', title: 'Supervised Machine Learning for Brain Tumor Progression Prediction on Limited and Imbalanced Data: An Exploratory Study', description: 'Short Paper at the MetroXRaine 2025 conference on the specia session DHEAL-COM4METROXRAI' },
+    { date: 'Oct 2025', title: 'Supervised Machine Learning for Brain Tumor Progression Prediction on Limited and Imbalanced Data: An Exploratory Study', description: 'Short Paper at the MetroXRaine 2025 conference on the special session DHEAL-COM4METROXRAI' },
     { date: 'Oct 2025', title: 'A Mining-Software-Repository study on deprecated API usages', description: 'Special contribution for the IST Journal with the extension of the article presented at PROFES 2023.' },
     { date: 'Apr 2025', title: 'Do LLMs Provide Links to Code Similar to What They Generate?', description: 'Research Paper at the MSR 2025 conference.' },
     { date: 'Oct 2024', title: 'MSR4SBOM: Mining Software Repositories for enhanced SBOMs', description: 'Presentation of the poster in the ESEM 2024 conference.' },
