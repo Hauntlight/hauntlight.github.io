@@ -6,10 +6,11 @@
    * Adding an 'award' property allows us to dynamically add badges.
    */
   const publicationsData = [
+    { date: 'Aug 2026', title: 'A Multi-Study Evaluation into Generative Artificial Intelligence for Test-Driven Development', description: 'Research paper for ACM Transactions on Software Engineering and Methodology (TOSEM)' },
     { date: 'Jul 2026', title: 'Heart Failure Risk Stratification in an IoT Healthcare Platform Using Ensemble Learning', description: 'Presentation of the research paper at CoDIT 2026 on the special session Artificial Intelligence and Optimization Methods for Smart Healthcare Systems' },
-    { date: 'Nov 2025', title: 'On the use of Test-Driven Development for Embedded Systems', description: 'Special contribution for the International Journal Information and Software Technology (IST) as special Issue.' },
+    { date: 'Nov 2025', title: 'On the use of Test-Driven Development for Embedded Systems', description: 'Research paper for the International Journal Information and Software Technology (IST) as special Issue.' },
     { date: 'Oct 2025', title: 'Supervised Machine Learning for Brain Tumor Progression Prediction on Limited and Imbalanced Data: An Exploratory Study', description: 'Short Paper at the MetroXRaine 2025 conference on the special session DHEAL-COM4METROXRAI' },
-    { date: 'Oct 2025', title: 'A Mining-Software-Repository study on deprecated API usages', description: 'Special contribution for the IST Journal with the extension of the article presented at PROFES 2023.' },
+    { date: 'Oct 2025', title: 'A Mining-Software-Repository study on deprecated API usages', description: 'Research paper  for the IST Journal with the extension of the article presented at PROFES 2023.' },
     { date: 'Apr 2025', title: 'Do LLMs Provide Links to Code Similar to What They Generate?', description: 'Research Paper at the MSR 2025 conference.' },
     { date: 'Oct 2024', title: 'MSR4SBOM: Mining Software Repositories for enhanced SBOMs', description: 'Presentation of the poster in the ESEM 2024 conference.' },
     { date: 'Aug 2024', title: 'User Experience and Security in Digital Health Applications', description: 'Presentation of the short paper in the SEAA 2024 conference.' },
@@ -19,7 +20,7 @@
     { date: 'Jan 2024', title: 'Generative AI to Improve Learning of TDD', description: 'Presentation of the extended abstract in the WAILS 2024 conference.' },
     { date: 'Dec 2023', title: 'On Deprecated API Usages: An Exploratory Study', description: 'Presentation of the article in the PROFES 2023 conference.', award: 'Best Paper Award' },
     { date: 'Nov 2023', title: 'The Role of the ’Principle of Acceptability in Security’', description: 'Presentation of the scientific poster to the AHL Napoli 2023.' },
-    { date: 'Apr 2023', title: 'On the spread and evolution of dead methods', description: 'Special contribution for the International Journal Springer EMSE with the extension of the article presented at ESEM 2021.' },
+    { date: 'Apr 2023', title: 'On the spread and evolution of dead methods', description: 'Research paper  for the International Journal Springer EMSE with the extension of the article presented at ESEM 2021.' },
     { date: 'Jun 2022', title: 'Do Developers Modify Dead Methods during Maintenance?', description: 'Presentation of the scientific article in the EASE 2022 conference.' },
     { date: 'Oct 2021', title: 'An Exploratory Study on Dead Methods', description: 'Presentation of the article in the ESEM 2021 conference.', award: 'Candidate Best Paper' },
   ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Ensure data is always sorted chronologically descending
