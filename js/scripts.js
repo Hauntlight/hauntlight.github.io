@@ -6,6 +6,7 @@
    * Adding an 'award' property allows us to dynamically add badges.
    */
   const publicationsData = [
+    { date: 'Sep 2026', title: 'Beyond Rules: LLM-Powered Linting for Quantum Programs', description: 'Research paper at IEEE Quantum Week 2026 (QSYS track)' },
     { date: 'Aug 2026', title: 'A Multi-Study Evaluation into Generative Artificial Intelligence for Test-Driven Development', description: 'Research paper for ACM Transactions on Software Engineering and Methodology (TOSEM)' },
     { date: 'Jul 2026', title: 'Heart Failure Risk Stratification in an IoT Healthcare Platform Using Ensemble Learning', description: 'Presentation of the research paper at CoDIT 2026 on the special session Artificial Intelligence and Optimization Methods for Smart Healthcare Systems' },
     { date: 'Nov 2025', title: 'On the use of Test-Driven Development for Embedded Systems', description: 'Research paper for the International Journal Information and Software Technology (IST) as special Issue.' },
